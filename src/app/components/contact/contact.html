@@ -1,0 +1,41 @@
+<div class="contact">
+  <form (submit)="submitForm()">
+    <div class="form-section">
+      <label for="email">Email</label>
+      <input name="email" [(ngModel)]="email" (ngModelChange)="inputChange()" placeholder="Email" />
+    </div>
+    <div class="form-section">
+      <label for="message">Message</label>
+      <textarea name="message" [(ngModel)]="message" (ngModelChange)="inputChange()" placeholder="Message"></textarea>
+    </div>
+    <button [disabled]="disableSubmit" class="submit" type="submit">Submit</button>
+  </form>
+  <div class="contact-links">
+    <div class="contact-row">
+      <div class="contact-item">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+        <span>anakhasuresh15@gmail.com</span>
+      </div>
+
+      <div class="contact-item">
+        <fa-icon [icon]="faPhone"></fa-icon>
+        <span>+91 8547933539</span>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-item">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+        <a href="https://www.linkedin.com/in/anakha-suresh/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <fa-icon [icon]="faGithub"></fa-icon>
+        <a href="https://github.com/AnakhaSuresh15" target="_blank">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

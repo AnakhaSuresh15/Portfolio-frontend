@@ -1,0 +1,58 @@
+h3 {
+  font-style: italic;
+  color: #f1b47e;
+}
+.about {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.sunflower-img {
+  width: 30%;
+  height: 95%;
+}
+
+.content {
+  text-align: left;
+  line-height: 2rem;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 3rem 2rem 10rem;
+    overflow-y: scroll;
+  }
+  .sunflower-img {
+    align-self: center;
+    height: 70%;
+    width: 60%;
+  }
+  .content {
+    text-align: left;
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    padding: 3rem 2rem 10rem;
+    overflow-y: scroll;
+  }
+  .sunflower-img {
+    align-self: center;
+    height: 70%;
+    width: 60%;
+  }
+  .content {
+    text-align: left;
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}

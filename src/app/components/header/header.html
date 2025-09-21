@@ -1,0 +1,29 @@
+<header class="header">
+  <ul>
+    <li
+      [ngClass]="selectedTab === 'home' ? 'selected' : ''"
+      (click)="handleTabSelection('home')"
+    >
+      Home
+    </li>
+    <li
+      [ngClass]="selectedTab === 'about-me' ? 'selected' : ''"
+      (click)="handleTabSelection('about-me')"
+    >
+      About Me
+    </li>
+    <li
+      [ngClass]="selectedTab === 'skills' ? 'selected' : ''"
+      (click)="handleTabSelection('skills')"
+      class="desktop-only"
+    >
+      Skills
+    </li>
+    <li
+      [ngClass]="selectedTab === 'contact' ? 'selected' : ''"
+      (click)="handleTabSelection('contact')"
+    >
+      Contact
+    </li>
+  </ul>
+</header>

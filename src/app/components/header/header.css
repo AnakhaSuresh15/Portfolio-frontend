@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 5px solid #e3d9cd;
+}
+
+li {
+  padding: 1rem 2rem;
+  display: inline;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+  margin-bottom: -2px;
+  transition: border-color 0.3s;
+  white-space: nowrap;
+}
+
+li.selected {
+  border-bottom-color: #f1b47e;
+}
+
+@media (max-width: 768px) {
+  li {
+    padding: 0.7rem 1.7rem;
+  }
+}

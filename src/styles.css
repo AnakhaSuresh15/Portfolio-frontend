@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-root app-main {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Base font-size */
+html {
+  font-size: 16px;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+.mobile-only {
+  display: none !important;
+}
+.desktop-only {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* light mode
+main-bg: rgba(253,244,235,255) / #fdf4eb
+inner-bg: #fef9f3 / rgba(254,249,243,255)
+border: #e3d9cd
+header-button-text: #0e0d0b
+name-text: #1a232a
+sub-text: #7a7b73
+button #fef0e3 #f1b47e #b0cad7
+
+dark mode
+main-bg: #181c1f
+inner-bg: #0e1215
+border: #23272a
+header-button-text: #fbfbf8
+name-text: #fbf0e9
+sub-text: #c2c3c7
+button: #f1b47e #21262a */
+
+app-about-me,
+app-home,
+app-projects,
+app-contact {
+  display: block;
+  height: 90%;
+}
+
+@media (max-width: 768px) {
+  app-about-me,
+  app-home,
+  app-projects,
+  app-contact {
+    height: 94%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

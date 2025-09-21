@@ -1,0 +1,41 @@
+.experience {
+  display: flex;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 1.5rem;
+}
+
+.label {
+  width: 120px;
+  text-align: left;
+}
+
+.girl-img {
+  width: 35%;
+  height: 70%;
+  background-color: #fef9f3;
+}
+
+:host ::ng-deep .mat-mdc-progress-bar {
+  display: inline-block !important;
+}
+
+:host ::ng-deep .mdc-linear-progress {
+  width: 60%;
+}
+
+custom-progress-bar .mat-progress-bar-fill::after {
+  background-color: #4caf50; /* Green color */
+}
