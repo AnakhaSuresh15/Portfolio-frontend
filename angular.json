@@ -19,7 +19,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/404.html"
             ],
             "styles": ["src/custom-theme.scss", "src/styles.css"]
           },
@@ -70,7 +71,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/404.html"
             ],
             "styles": ["src/styles.css"]
           }

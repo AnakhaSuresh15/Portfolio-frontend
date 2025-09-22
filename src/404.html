@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Not Found</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <script>
+      (function () {
+        const originalPath =
+          location.pathname + location.search + location.hash;
+        // fetch relative index.html (works if build uses relative asset paths)
+        fetch("./index.html")
+          .then(function (response) {
+            return response.text();
+          })
+          .then(function (html) {
+            document.open();
+            document.write(html);
+            document.close();
+            // restore original path so Angular router sees it
+            history.replaceState(null, "", originalPath);
+          })
+          .catch(function () {
+            // on failure, fallback to root
+            location.replace("/");
+          });
+      })();
+    </script>
+  </body>
+</html>
