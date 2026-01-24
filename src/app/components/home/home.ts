@@ -11,9 +11,9 @@ export class Home {
     if (index === 1) {
       window.open('https://anakhasuresh15.github.io/Tic-Tac-Toe/', '_blank');
     } else if (index === 2) {
-      window.open('https://github.com/AnakhaSuresh15/FoodDash', '_blank');
+      window.open('https://nibblenotes-frontend.vercel.app/', '_blank');
     } else if (index === 3) {
-      window.open('https://github.com/AnakhaSuresh15/WeTalk', '_blank');
+      window.open('https://github.com/AnakhaSuresh15/FoodDash', '_blank');
     }
   }
 }
